@@ -20,7 +20,7 @@ describe('home page feature test', function () {
     it('verify logged in account email', function () {
         browser.url('/')
         browser.maximizeWindow();
-        // loginPage.doLogin(configData.username, configData.password)
+        loginPage.doLogin(configData.username, configData.password)
         homePage.doClickAccountMenu()
         const email = homePage.getLoggedInAccountEmail()
         assert.equal(configData.username, email, 'email address is not found')

@@ -13,15 +13,15 @@ describe('login page feature test', function(){
     })
 
     it('verify signup link',function(){
-        // browser.url('/')
-        // browser.maximizeWindow();
+        browser.url('/')
+        browser.maximizeWindow();
         loginPage.isSignUpLinkExist()
         assert.equal(true, loginPage.isSignUpLinkExist(), 'sign up link is not present')
    })
 
    it('verify login',function(){
-    // browser.url('/')
-    // browser.maximizeWindow();
+    browser.url('/')
+    browser.maximizeWindow();
     loginPage.doLogin(configData.username, configData.password)
 
 })
