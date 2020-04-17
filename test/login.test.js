@@ -12,7 +12,7 @@ describe('login page feature test', function(){
          assert.equal(constants.LOGIN_PAGE_TITLE, title, 'title is not found error')
     })
 
-    it.only('verify signup link',function(){
+    it('verify signup link',function(){
         browser.url('/')
         browser.maximizeWindow();
         loginPage.isSignUpLinkExist()
