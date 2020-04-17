@@ -16,7 +16,7 @@ describe('login page feature test', function(){
         browser.url('/')
         browser.maximizeWindow();
         loginPage.isSignUpLinkExist()
-        assert.equal(true, loginPage.isSignUpLinkExist(), 'sign up link is not present')
+        assert.equal(false, loginPage.isSignUpLinkExist(), 'sign up link is not present')
    })
 
    it('verify login',function(){
