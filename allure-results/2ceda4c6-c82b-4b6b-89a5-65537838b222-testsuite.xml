@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1587125956314' stop='1587125980251'>
+    <name>home page feature test</name>
+    <title>home page feature test</title>
+    <test-cases>
+        <test-case start='1587125956314' status='passed' stop='1587125968926'>
+            <name>verify home page header text</name>
+            <title>verify home page header text</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1587125968926' status='broken' stop='1587125980251'>
+            <name>verify logged in account email</name>
+            <title>verify logged in account email</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element ("#username") still not displayed after 10000ms</message>
+                <stack-trace>Error: element ("#username") still not displayed after 10000ms
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                    at ElementUtil.doSetValue (/Users/surendra.singh/Documents/Automation/webdriverio-learning/webdriverio-app-POM-Framework/util/elementUtil.js:9:17)
+                    at LoginPage.doLogin (/Users/surendra.singh/Documents/Automation/webdriverio-learning/webdriverio-app-POM-Framework/pages/login.page.js:21:21)
+                    at Context.&lt;anonymous> (/Users/surendra.singh/Documents/SuriPersonal/webdriver-io/webdrioverIO-pom-framework/webdrioverIO-pom-framework/test/sanitySuite/home.test.js:23:19)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
